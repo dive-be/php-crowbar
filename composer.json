@@ -1,0 +1,39 @@
+{
+    "name": "dive-be/php-crowbar",
+    "description": "Access private/protected properties",
+    "type": "library",
+    "homepage": "https://github.com/dive-be/php-crowbar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammed Sari",
+            "email": "muhammed@dive.be",
+            "homepage": "https://dive.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dive\\Crowbar\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix --config .php-cs-fixer.dist.php --allow-risky=yes",
+        "test": "vendor/bin/pest"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "pestphp/pest": "^1.21",
+        "friendsofphp/php-cs-fixer": "^3.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
