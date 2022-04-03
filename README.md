@@ -1,6 +1,6 @@
 # Access private/protected properties
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/dive-be/laravel-dry-requests.svg?style=flat-square)](https://packagist.org/packages/dive-be/php-crowbar)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dive-be/php-crowbar.svg?style=flat-square)](https://packagist.org/packages/dive-be/php-crowbar)
 
 This package allows you to access properties in a class with a restrictive access modifier i.e. `private` / `protected`.
 
