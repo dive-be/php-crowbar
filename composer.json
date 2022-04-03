@@ -17,7 +17,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Dive\\Crowbar\\": "src/",
+            "Dive\\Crowbar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "Tests\\": "tests/"
         }
     },
