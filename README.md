@@ -6,7 +6,7 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/dive-be/php-crowbar/Tests?label=tests)](https://github.com/dive-be/php-crowbar/actions?query=workflow%3ATests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/dive-be/php-crowbar.svg?style=flat-square)](https://packagist.org/packages/dive-be/php-crowbar)
 
-This package allows you to access methods / properties in a class with a restrictive access modifier i.e. `private` / `protected`.
+This package allows you to access methods / properties in a class with a restricted access modifier i.e. `private` / `protected`.
 
 ## Installation
 
