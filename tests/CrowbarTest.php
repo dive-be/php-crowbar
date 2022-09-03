@@ -14,8 +14,23 @@ it('can get the value of a property with a restrictive access modifier', functio
 
 it('can set the value of a property with a restrictive access modifier', function () {
     $crate = new SealedCrate('Bananas');
+    $crate = Crowbar::pry($crate);
 
-    Crowbar::pry($crate)->content = 'Lemons';
+    $crate->content = 'Lemons';
 
-    expect($crate->peek())->toBe('Lemons');
+    expect($crate->content)->toBe('Lemons');
+});
+
+it('can invoke a method with a restrictive access modifier', function () {
+    $crate = new SealedCrate('Dragonfruit');
+    $crate = Crowbar::pry($crate);
+
+    $valueA = $crate->peek();
+
+    $crate->replace('Lychee');
+
+    $valueB = $crate->peek();
+
+    expect($valueA)->toBe('Dragonfruit');
+    expect($valueB)->toBe('Lychee');
 });

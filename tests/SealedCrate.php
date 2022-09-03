@@ -8,7 +8,12 @@ class SealedCrate
         private string $content,
     ) {}
 
-    public function peek(): string
+    protected function replace(string $with)
+    {
+        $this->content = $with;
+    }
+
+    private function peek(): string
     {
         return $this->content;
     }
