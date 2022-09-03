@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/dive-be/php-crowbar/blob/master/art/socialcard.jpg?raw=true" alt="Social Card of PHP Crowbar"></p>
+
 # Access private methods / properties
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/dive-be/php-crowbar.svg?style=flat-square)](https://packagist.org/packages/dive-be/php-crowbar)
