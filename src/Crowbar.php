@@ -4,15 +4,15 @@ namespace Dive\Crowbar;
 
 use Closure;
 
-final class Crowbar
+final readonly class Crowbar
 {
-    private readonly Closure $call;
+    private Closure $call;
 
-    private readonly Closure $get;
+    private Closure $get;
 
-    private readonly Closure $set;
+    private Closure $set;
 
-    private readonly object $thing;
+    private object $thing;
 
     private function __construct(object $thing)
     {

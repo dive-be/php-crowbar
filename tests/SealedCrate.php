@@ -2,13 +2,11 @@
 
 namespace Tests;
 
-class SealedCrate
+final class SealedCrate
 {
-    public function __construct(
-        private string $content,
-    ) {}
+    public function __construct(private string $content) {}
 
-    protected function replace(string $with)
+    private function replace(string $with): void
     {
         $this->content = $with;
     }
