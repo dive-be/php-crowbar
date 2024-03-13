@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "~8.2"
+        "php": "~8.3"
     },
     "autoload": {
         "psr-4": {
@@ -26,19 +26,9 @@
         }
     },
     "scripts": {
-        "format": "vendor/bin/php-cs-fixer fix --config .php-cs-fixer.dist.php --allow-risky=yes",
         "test": "vendor/bin/pest",
         "verify": "@composer test"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require-dev": {
-        "pestphp/pest": "^2.6",
-        "friendsofphp/php-cs-fixer": "^3.16"
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    }
+    "prefer-stable": true
 }
